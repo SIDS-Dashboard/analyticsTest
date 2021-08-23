@@ -81,7 +81,7 @@ function clearFilters() {
 map.on('click', 'jamaica', (e) => {
   new mapboxgl.Popup()
     .setLngLat(e.lngLat)
-    .setHTML('DEM:' + e.features[0].properties.dem + '<br>PopDense: ' + e.features[0].properties['1c5'])
+    .setHTML('Elevation:' + e.features[0].properties.dem + '<br>PopDense: ' + e.features[0].properties['1c5'])
     .addTo(map);
 
 
